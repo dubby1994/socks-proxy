@@ -11,7 +11,7 @@ import io.netty.util.internal.logging.Slf4JLoggerFactory;
 
 public final class SocksServer {
 
-    static final int PORT = Integer.parseInt(System.getProperty("port", "8888"));
+    private static final int PORT = Integer.parseInt(System.getProperty("port", "8888"));
 
     public static void main(String[] args) throws Exception {
         InternalLoggerFactory.setDefaultFactory(Slf4JLoggerFactory.INSTANCE);
